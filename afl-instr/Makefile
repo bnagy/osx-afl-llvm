@@ -1,0 +1,12 @@
+LEVEL= ../..
+LIBRARYNAME= afl
+SHARED_LIBRARY= 1
+LOADABLE_MODULE= 1
+LINK_LIBS_IN_SHARED= 1
+ENABLE_OPTIMIZED= 1
+include $(LEVEL)/Makefile.common
+
+LDFLAGS  += 
+
+CXXFLAGS += -fexceptions -fPIC
+CXXFLAGS += -std=c++11 -g -O0
