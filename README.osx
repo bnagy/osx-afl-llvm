@@ -1,0 +1,14 @@
+============================================
+Fast LLVM-based instrumentation for afl-fuzz
+============================================
+
+  (See ../docs/README for the general instruction manual.)
+  (See ./README.llvm for the basic idea)
+
+0) Run `make osx`
+
+===
+BUGS
+===
+
+It's awful. Please fix it.
