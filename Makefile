@@ -38,7 +38,7 @@ CXXFLAGS    += -Wall -D_FORTIFY_SOURCE=2 -g -v -Wno-pointer-sign \
                -DVERSION=\"$(VERSION)\"
 
 CLANG_CFL    = `$(LLVM_CONFIG) --cxxflags` -fno-rtti $(CXXFLAGS)
-CLANG_LFL    = `$(LLVM_CONFIG) --ldflags` $(LDFLAGS) `$(LLVM_CONFIG) --libs` -lncurses
+CLANG_LFL    = `$(LLVM_CONFIG) --ldflags --libs --system-libs` $(LDFLAGS)
 
 # We were using llvm-config --bindir to get the location of clang, but
 # this seems to be busted on some distros, so using the one in $PATH is
