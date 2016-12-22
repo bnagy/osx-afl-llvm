@@ -16,7 +16,7 @@ fi
 if [[ ! -f "llvm-${LLVM_VERSION}.src.tar.xz" ]]; then
   echo
   echo "Downloading LLVM"
-  curl -O "http://llvm.org/releases/${LLVM_VERSION}/llvm-${LLVM_VERSION}.src.tar.xz"
+  curl -O "http://releases.llvm.org/${LLVM_VERSION}/llvm-${LLVM_VERSION}.src.tar.xz"
 else
   echo
   echo "Found existing LLVM"
@@ -25,7 +25,7 @@ fi
 if [[ ! -f "cfe-${LLVM_VERSION}.src.tar.xz" ]]; then
   echo
   echo "Downloading Clang"
-  curl -O "http://llvm.org/releases/${LLVM_VERSION}/cfe-${LLVM_VERSION}.src.tar.xz"
+  curl -O "http://releases.llvm.org/${LLVM_VERSION}/cfe-${LLVM_VERSION}.src.tar.xz"
 else
   echo
   echo "Found existing Clang"
@@ -34,7 +34,7 @@ fi
 if [[ ! -f "compiler-rt-${LLVM_VERSION}.src.tar.xz" ]]; then
   echo
   echo "Downloading Compiler-RT"
-  curl -O "http://llvm.org/releases/${LLVM_VERSION}/compiler-rt-${LLVM_VERSION}.src.tar.xz"
+  curl -O "http://releases.llvm.org/${LLVM_VERSION}/compiler-rt-${LLVM_VERSION}.src.tar.xz"
 else
   echo
   echo "Found existing Compiler-RT"
